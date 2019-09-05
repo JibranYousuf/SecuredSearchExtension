@@ -1,0 +1,85 @@
+html {
+    font-size: 10px;
+}
+
+.container {
+    height: 100vh;
+}
+
+.browser-image-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.browser-image-container img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.browser-window-content::after {
+    content: "";
+    background-image: url(../img/secure1.jpg);
+    background-position: center 55%;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+.browser-window-content {
+    position: relative;
+    padding-top: 178px;
+    height: 85%;
+}
+
+.browser-image-container .sse-main-heading {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 5rem;
+    color: #5E5E5E;
+    font-size: 4rem;
+}
+
+.browser-image-container .sse-description-one {
+    color: #5E5E5E;    
+    font-size: 2.3rem;
+    margin-bottom: 5rem;
+    padding: 0 15.5rem;
+    text-align: center;
+}
+
+.browser-image-container .sse-description-two {
+    color: #5E5E5E;    
+    font-size: 2.3rem;
+    padding: 0 15.5rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.sse-description-one .extension-name{
+    text-transform: capitalize;
+}
+.btn-continue {
+    display: inline-block;
+    border: none;
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    padding: 1.5rem 4rem;
+    letter-spacing: 1px;
+    background: #57BE78;
+}
+
+.btn-wrapper {
+    display: block;
+    text-align: center;
+}
