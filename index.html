@@ -7,13 +7,16 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
 
     <title>Secured Search Extension</title>
   </head>
   <body>
     <div class="container">
-        <div class="browser-image-container">
-            <img src="img/browser-screen.jpg" alt="">
+        <div class="browser-img-container">
+            <img class="browser-img" src="img/browser-screen.jpeg" />
+        </div>
+        <div class="image-container">
             <div class="browser-window-content">
                 <h1 class="sse-main-heading">Security Verfication</h1>
                 <p class="sse-description-one">By Clicking the button below, you'll go through a standard <br /> security check, after which you will be redirected to chrome store
@@ -23,7 +26,15 @@
                     This extension will offer you a safer web search experience by changing your default <br /> search provider.
                 </p>
                 <div class="btn-wrapper">
-                        <button class="btn-continue">Continue</button>
+                        <button class="btn-continue">Continue
+                            <div class="rounded-tick"></div>
+                            <div class="step-bar-wrapper">
+                              <div class="dash"></div>
+                              <div class="dash"></div>
+                              <div class="dash"></div>
+                              <div class="dash-step-no">step 1 of 3</div>
+                            </div>
+                        </button>
                 </div>
             </div>
         </div>
