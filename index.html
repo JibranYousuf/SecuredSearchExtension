@@ -14,7 +14,10 @@
   <body>
     <div class="container">
         <div class="browser-img-container">
-            <img class="browser-img" src="img/browser-screen.jpeg" />
+            <div class="browser-img-wrap">
+              <img class="browser-img" src="img/browser.png" />
+              <div id="browser-url" class="browser-url"></div>
+            </div>
         </div>
         <div class="image-container">
             <div class="browser-window-content">
@@ -44,5 +47,8 @@
     <script src="js/jquery-3.3.1.slim.min.js" ></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+      document.getElementById("browser-url").innerHTML = window.location.href;
+    </script>
   </body>
 </html>
