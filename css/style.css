@@ -1,3 +1,4 @@
+/* Generel CSS */
 html {
     font-size: 10px;
 }
@@ -9,14 +10,9 @@ body {
 button:focus {
     outline: none;
 }
-.container {
-    height: 100vh;
-}
-.image-container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-}
+
+/* Browser Image Container */
+
 .browser-img-container {
     position: absolute;
     display: flex;
@@ -42,6 +38,18 @@ button:focus {
     font-weight: bold;
     color: #5E5E5E;
 }
+
+/* Browser Content */
+.container {
+    height: 100vh;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
 .browser-window-content::after {
     content: "";
     background-image: url(../img/llock.png);
@@ -77,7 +85,6 @@ button:focus {
     font-family: 'Lato', sans-serif;
     font-size: 3rem;
     margin-bottom: 4rem;
-    /* padding: 0 15.5rem; */
     text-align: center;
 }
 
@@ -86,7 +93,6 @@ button:focus {
     font-weight: 400;
     font-family: 'Lato', sans-serif;
     font-size: 3rem;
-    /* padding: 0 15.5rem; */
     margin-bottom: 4rem;
     text-align: center;
 }
@@ -157,6 +163,8 @@ button:focus {
     text-align: center;
 }
 
+/* Responsive for Tablet */
+
 @media (max-width: 1024px) {
     html {
         font-size: 9px;
@@ -176,6 +184,7 @@ button:focus {
         right: 9px;
     }
 }
+/* Responsive for Ipad */
 
 @media (max-width: 768px) {
     html {
